@@ -29,7 +29,7 @@ def create_link_or_copy(src: Path, dst: Path, mode: str) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Prepare downloaded X-Lebench videos in user-defined order.")
-    parser.add_argument("--video_dir", default="datasets/X-Lebench数据集（部分）/Ego4D/v2/full_scale")
+    parser.add_argument("--video_dir", default="datasets/xlebench_partial/Ego4D/v2/full_scale")
     parser.add_argument("--order_file", default="datasets/video_order_user.png_list.txt")
     parser.add_argument("--out_dir", default="datasets/xlebench_ordered_videos")
     parser.add_argument("--mode", choices=["manifest", "symlink", "copy"], default="manifest")

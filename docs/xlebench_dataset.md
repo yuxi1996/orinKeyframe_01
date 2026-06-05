@@ -1,9 +1,9 @@
-# X-Lebench Download And Order Setup
+﻿# X-Lebench Download And Order Setup
 
 The portable project keeps X-Lebench metadata and scripts only. Large `.mp4` videos are intentionally not bundled because they should be re-downloaded on Orin.
 
 ```text
-datasets/X-Lebench数据集（部分）/
+datasets/xlebench_partial/
 ```
 
 Included:
@@ -55,10 +55,19 @@ python3 scripts/download_xlebench_ego4d.py \
   --aws_credentials /path/to/credentials
 ```
 
+If the Ego4D CLI reports `Could not find AWS profile 'default'`, create `~/.aws/config` and `~/.aws/credentials`, or pass explicit paths. For a non-default profile, add:
+
+```bash
+python3 scripts/download_xlebench_ego4d.py \
+  --aws_config /path/to/config \
+  --aws_credentials /path/to/credentials \
+  --aws_profile your_profile_name
+```
+
 After download, the expected video directory is:
 
 ```text
-datasets/X-Lebench数据集（部分）/Ego4D/v2/full_scale
+datasets/xlebench_partial/Ego4D/v2/full_scale
 ```
 
 Generate an ordered manifest:
@@ -76,13 +85,13 @@ python3 scripts/prepare_xlebench_order.py --mode symlink
 Run a full dataset benchmark after download:
 
 ```bash
-python run_benchmark.py --video_dir "datasets/X-Lebench数据集（部分）/Ego4D/v2/full_scale" --config config/xlebench.yaml
+python run_benchmark.py --video_dir "datasets/xlebench_partial/Ego4D/v2/full_scale" --config config/xlebench.yaml
 ```
 
 Run one video:
 
 ```bash
-python run_extract.py --video "datasets/X-Lebench数据集（部分）/Ego4D/v2/full_scale/9061bd1f-52ee-4aee-bbff-93c186cca302.mp4" --config config/xlebench.yaml
+python run_extract.py --video "datasets/xlebench_partial/Ego4D/v2/full_scale/9061bd1f-52ee-4aee-bbff-93c186cca302.mp4" --config config/xlebench.yaml
 ```
 
 YOLO remains optional. If `weights/yolo26n.pt` is absent, the benchmark falls back to non-YOLO keyframe extraction.

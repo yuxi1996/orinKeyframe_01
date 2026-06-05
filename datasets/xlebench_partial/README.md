@@ -1,4 +1,4 @@
-# X-Lebench Partial Metadata
+﻿# X-Lebench Partial Metadata
 
 This folder keeps lightweight metadata only:
 
@@ -13,5 +13,5 @@ python3 scripts/download_xlebench_ego4d.py
 Expected download output:
 
 ```text
-datasets/X-Lebench数据集（部分）/Ego4D/v2/full_scale/
+datasets/xlebench_partial/Ego4D/v2/full_scale/
 ```

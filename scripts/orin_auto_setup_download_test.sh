@@ -6,7 +6,7 @@ cd "${PROJECT_ROOT}"
 
 VENV_DIR=".venv"
 PYTHON_BIN="python3"
-VIDEO_DIR="datasets/X-Lebench数据集（部分）/Ego4D/v2/full_scale"
+VIDEO_DIR="datasets/xlebench_partial/Ego4D/v2/full_scale"
 ORDER_MODE="manifest"
 RUN_DOWNLOAD=1
 RUN_BENCHMARK=1
@@ -15,6 +15,7 @@ DRY_RUN_DOWNLOAD=0
 INSTALL_YOLO=0
 AWS_CONFIG_PATH=""
 AWS_CREDENTIALS_PATH=""
+AWS_PROFILE_NAME=""
 
 usage() {
   cat <<'EOF'
@@ -32,6 +33,7 @@ Options:
   --no-tegrastats         Do not start tegrastats monitor during benchmark.
   --aws-config PATH       Ego4D/AWS config path. Not stored in this repo.
   --aws-credentials PATH  Ego4D/AWS credentials path. Not stored in this repo.
+  --aws-profile NAME      AWS profile name. Optional.
   -h, --help              Show help.
 
 Default flow:
@@ -86,6 +88,10 @@ while [[ $# -gt 0 ]]; do
       AWS_CREDENTIALS_PATH="$2"
       shift 2
       ;;
+    --aws-profile)
+      AWS_PROFILE_NAME="$2"
+      shift 2
+      ;;
     -h|--help)
       usage
       exit 0
@@ -120,7 +126,7 @@ fi
 
 # shellcheck disable=SC1091
 source "${VENV_DIR}/bin/activate"
-python -m pip install --upgrade pip setuptools wheel
+python -m pip install --upgrade "pip<26" "setuptools<82" wheel
 
 echo "[2/7] Install runtime dependencies"
 python -m pip install numpy psutil PyYAML ego4d
@@ -140,6 +146,9 @@ if [[ -n "${AWS_CONFIG_PATH}" ]]; then
 fi
 if [[ -n "${AWS_CREDENTIALS_PATH}" ]]; then
   DOWNLOAD_CMD+=(--aws_credentials "${AWS_CREDENTIALS_PATH}")
+fi
+if [[ -n "${AWS_PROFILE_NAME}" ]]; then
+  DOWNLOAD_CMD+=(--aws_profile "${AWS_PROFILE_NAME}")
 fi
 if [[ "${DRY_RUN_DOWNLOAD}" -eq 1 ]]; then
   DOWNLOAD_CMD+=(--dry_run)

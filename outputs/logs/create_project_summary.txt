@@ -6,11 +6,11 @@ README.md
 bootstrap_orin_from_github.sh
 config/default.yaml
 config/xlebench.yaml
-datasets/X-Lebench数据集（部分）/README.md
-datasets/X-Lebench数据集（部分）/simulation_0120dffb_0d0b4c6b_annotation.json
 datasets/video_order_user.png_list.txt
 datasets/xlebench_ordered_videos/missing_video_ids.txt
 datasets/xlebench_ordered_videos/ordered_manifest.tsv
+datasets/xlebench_partial/README.md
+datasets/xlebench_partial/simulation_0120dffb_0d0b4c6b_annotation.json
 docs/algorithm_design.md
 docs/orin_environment.md
 docs/windows_verification.md
@@ -54,7 +54,7 @@ bash scripts/orin_auto_setup_download_test.sh
 
 ## Manual video input
 Put .mp4 files into orinKeyframe_01/videos, or use the integrated X-Lebench path:
-python3 run_benchmark.py --video_dir "datasets/X-Lebench数据集（部分）/Ego4D/v2/full_scale" --config config/xlebench.yaml
+python3 run_benchmark.py --video_dir "datasets/xlebench_partial/Ego4D/v2/full_scale" --config config/xlebench.yaml
 
 ## Manual YOLO weights input
 Optional: put weights/yolo26n.pt under this project. If missing, the code falls back to non-YOLO extraction.

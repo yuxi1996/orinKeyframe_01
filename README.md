@@ -1,4 +1,4 @@
-# orinKeyframe_01
+﻿# orinKeyframe_01
 
 Portable video-file keyframe performance benchmark for NVIDIA Jetson AGX Orin Developer Kit. This project only tests video files. It does not use cameras.
 
@@ -74,6 +74,15 @@ bash bootstrap_orin_from_github.sh -- \
   --aws-credentials /path/to/aws/credentials
 ```
 
+If you see `Could not find AWS profile 'default'`, Ego4D credentials are not configured yet. Put your Ego4D/AWS files under `~/.aws/config` and `~/.aws/credentials`, or pass the two paths above. If you use a non-default profile:
+
+```bash
+bash bootstrap_orin_from_github.sh -- \
+  --aws-config /path/to/aws/config \
+  --aws-credentials /path/to/aws/credentials \
+  --aws-profile your_profile_name
+```
+
 Dry run the download first:
 
 ```bash
@@ -110,7 +119,7 @@ videos/
 This project includes the partial X-Lebench annotation and download/order scripts under:
 
 ```text
-datasets/X-Lebench数据集（部分）/
+datasets/xlebench_partial/
 ```
 
 Large `.mp4` videos are not bundled. Re-download them on Orin with the Ego4D CLI.
@@ -154,13 +163,13 @@ python run_benchmark.py --video_dir videos
 X-Lebench dataset benchmark:
 
 ```bash
-python run_benchmark.py --video_dir "datasets/X-Lebench数据集（部分）/Ego4D/v2/full_scale" --config config/xlebench.yaml
+python run_benchmark.py --video_dir "datasets/xlebench_partial/Ego4D/v2/full_scale" --config config/xlebench.yaml
 ```
 
 Small X-Lebench smoke test:
 
 ```bash
-python run_extract.py --video "datasets/X-Lebench数据集（部分）/Ego4D/v2/full_scale/9061bd1f-52ee-4aee-bbff-93c186cca302.mp4" --config config/xlebench.yaml
+python run_extract.py --video "datasets/xlebench_partial/Ego4D/v2/full_scale/9061bd1f-52ee-4aee-bbff-93c186cca302.mp4" --config config/xlebench.yaml
 ```
 
 ## Outputs

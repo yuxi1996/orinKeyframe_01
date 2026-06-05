@@ -121,7 +121,7 @@ def write_create_project_summary(path: Path, rows: list[dict], videos_found: int
         "",
         "## Manual video input",
         "Put .mp4 files into orinKeyframe_01/videos, or use the integrated X-Lebench path:",
-        'python3 run_benchmark.py --video_dir "datasets/X-Lebench数据集（部分）/Ego4D/v2/full_scale" --config config/xlebench.yaml',
+        'python3 run_benchmark.py --video_dir "datasets/xlebench_partial/Ego4D/v2/full_scale" --config config/xlebench.yaml',
         "",
         "## Manual YOLO weights input",
         "Optional: put weights/yolo26n.pt under this project. If missing, the code falls back to non-YOLO extraction.",

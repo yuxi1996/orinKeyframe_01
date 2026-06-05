@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 
-DEFAULT_DATASET_ROOT = Path("datasets") / "X-Lebench数据集（部分）"
+DEFAULT_DATASET_ROOT = Path("datasets") / "xlebench_partial"
 DEFAULT_ANNOTATION = DEFAULT_DATASET_ROOT / "simulation_0120dffb_0d0b4c6b_annotation.json"
 DEFAULT_OUTPUT_DIR = DEFAULT_DATASET_ROOT / "Ego4D"
 
@@ -51,6 +51,7 @@ def main() -> None:
     parser.add_argument("--output_directory", default=str(DEFAULT_OUTPUT_DIR))
     parser.add_argument("--aws_config", default=None, help="Optional AWS config path for Ego4D CLI.")
     parser.add_argument("--aws_credentials", default=None, help="Optional AWS credentials path for Ego4D CLI.")
+    parser.add_argument("--aws_profile", default=None, help="AWS profile name for Ego4D CLI. Default uses Ego4D CLI default.")
     parser.add_argument("--dry_run", action="store_true")
     args = parser.parse_args()
 
@@ -65,6 +66,8 @@ def main() -> None:
         os.environ["AWS_CONFIG_FILE"] = str(Path(args.aws_config))
     if args.aws_credentials:
         os.environ["AWS_SHARED_CREDENTIALS_FILE"] = str(Path(args.aws_credentials))
+    if args.aws_profile:
+        os.environ["AWS_PROFILE"] = args.aws_profile
 
     video_ids = load_video_ids(annotation, Path(args.order_file))
     if not video_ids:
@@ -88,6 +91,13 @@ def main() -> None:
         return
     if shutil.which("ego4d") is None:
         raise SystemExit("ego4d CLI not found. Install it on Orin first, for example: python3 -m pip install ego4d")
+    if not (args.aws_config and args.aws_credentials) and not (Path.home() / ".aws" / "credentials").exists():
+        raise SystemExit(
+            "Ego4D download needs AWS/Ego4D credentials. Run one of:\n"
+            "  bash bootstrap_orin_from_github.sh -- --aws-config /path/config --aws-credentials /path/credentials\n"
+            "  mkdir -p ~/.aws && put config/credentials there, then rerun\n"
+            "You can inspect IDs first with: python scripts/download_xlebench_ego4d.py --dry_run"
+        )
     sys.exit(subprocess.run(cmd).returncode)
 
 
