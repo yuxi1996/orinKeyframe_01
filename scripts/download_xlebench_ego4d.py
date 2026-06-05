@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import configparser
 import json
 import os
 import shutil
@@ -44,6 +45,38 @@ def load_video_ids(annotation_path: Path, order_file: Path | None = None) -> lis
     return ids
 
 
+def _config_has_profile(path: Path, profile_name: str) -> bool:
+    parser = configparser.ConfigParser()
+    parser.read(path, encoding="utf-8")
+    candidates = {profile_name, f"profile {profile_name}"}
+    return any(section in candidates for section in parser.sections())
+
+
+def validate_aws_inputs(args: argparse.Namespace) -> None:
+    config_path = Path(args.aws_config).expanduser() if args.aws_config else Path.home() / ".aws" / "config"
+    credentials_path = Path(args.aws_credentials).expanduser() if args.aws_credentials else Path.home() / ".aws" / "credentials"
+    profile_name = args.aws_profile or os.environ.get("AWS_PROFILE") or "default"
+
+    missing = [str(p) for p in [config_path, credentials_path] if not p.exists()]
+    if missing:
+        raise SystemExit(
+            "Ego4D download needs real AWS/Ego4D credential files. These paths do not exist:\n"
+            + "\n".join(f"  {p}" for p in missing)
+            + "\n\nDo not use placeholder paths like /path/to/aws/config.\n"
+            "Use real files, for example:\n"
+            "  bash scripts/orin_auto_setup_download_test.sh --aws-config ~/.aws/config --aws-credentials ~/.aws/credentials\n"
+            "Or first inspect IDs only:\n"
+            "  python scripts/download_xlebench_ego4d.py --dry_run"
+        )
+
+    if not _config_has_profile(config_path, profile_name):
+        raise SystemExit(
+            f"AWS config file exists, but profile '{profile_name}' was not found in: {config_path}\n"
+            "For the default profile, the config should contain a [default] section.\n"
+            "For a named profile, pass --aws_profile your_profile_name."
+        )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Download X-Lebench related Ego4D full_scale videos on Orin.")
     parser.add_argument("--annotation", default=str(DEFAULT_ANNOTATION))
@@ -63,9 +96,9 @@ def main() -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
 
     if args.aws_config:
-        os.environ["AWS_CONFIG_FILE"] = str(Path(args.aws_config))
+        os.environ["AWS_CONFIG_FILE"] = str(Path(args.aws_config).expanduser())
     if args.aws_credentials:
-        os.environ["AWS_SHARED_CREDENTIALS_FILE"] = str(Path(args.aws_credentials))
+        os.environ["AWS_SHARED_CREDENTIALS_FILE"] = str(Path(args.aws_credentials).expanduser())
     if args.aws_profile:
         os.environ["AWS_PROFILE"] = args.aws_profile
 
@@ -89,15 +122,9 @@ def main() -> None:
     print(" ".join(cmd))
     if args.dry_run:
         return
+    validate_aws_inputs(args)
     if shutil.which("ego4d") is None:
         raise SystemExit("ego4d CLI not found. Install it on Orin first, for example: python3 -m pip install ego4d")
-    if not (args.aws_config and args.aws_credentials) and not (Path.home() / ".aws" / "credentials").exists():
-        raise SystemExit(
-            "Ego4D download needs AWS/Ego4D credentials. Run one of:\n"
-            "  bash bootstrap_orin_from_github.sh -- --aws-config /path/config --aws-credentials /path/credentials\n"
-            "  mkdir -p ~/.aws && put config/credentials there, then rerun\n"
-            "You can inspect IDs first with: python scripts/download_xlebench_ego4d.py --dry_run"
-        )
     sys.exit(subprocess.run(cmd).returncode)
 
 
