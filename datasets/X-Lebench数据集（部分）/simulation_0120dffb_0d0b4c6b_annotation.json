@@ -1,0 +1,1135 @@
+{
+    "metadata": {
+        "persona_id": "0120dffb",
+        "memory_id": "0d0b4c6b",
+        "gen_way": "openai",
+        "priority_location": "Italy"
+    },
+    "tasks": {
+        "objects_retrieval": {
+            "query_list": [
+                {
+                    "query_metadata": {
+                        "query_range": {
+                            "start_time": "16:32",
+                            "end_time": "17:05"
+                        },
+                        "video_index": 10,
+                        "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                    },
+                    "queries": [
+                        {
+                            "response_start_time_sec": 61315.930598599996,
+                            "response_end_time_sec": 61323.3610286,
+                            "query": "What did I put on the table?",
+                            "template": "Objects: What did I put in X?",
+                            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                        },
+                        {
+                            "response_start_time_sec": 61378.8632986,
+                            "response_end_time_sec": 61382.8630286,
+                            "query": "Did I leave the door open?",
+                            "template": "Objects: State of an object",
+                            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                        },
+                        {
+                            "response_start_time_sec": 61412.4183386,
+                            "response_end_time_sec": 61414.3610286,
+                            "query": "In what location did I see the capes?",
+                            "template": "Objects: In what location did I see object X ?",
+                            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                        },
+                        {
+                            "response_start_time_sec": 61319.7481386,
+                            "response_end_time_sec": 61324.0056886,
+                            "query": "in what location did I see the blue cover note?",
+                            "template": "Objects: In what location did I see object X ?",
+                            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                        },
+                        {
+                            "response_start_time_sec": 61323.8117186,
+                            "response_end_time_sec": 61325.0984686,
+                            "query": "what color is the throw pillow? ",
+                            "template": null,
+                            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                        },
+                        {
+                            "response_start_time_sec": 61330.3158286,
+                            "response_end_time_sec": 61331.5418286,
+                            "query": "In what location did I see the flower pot.",
+                            "template": "Objects: In what location did I see object X ?",
+                            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                        },
+                        {
+                            "response_start_time_sec": 61363.7322486,
+                            "response_end_time_sec": 61368.4067186,
+                            "query": "Was the light on in the room?",
+                            "template": "Objects: State of an object",
+                            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                        },
+                        {
+                            "response_start_time_sec": 61388.3205986,
+                            "response_end_time_sec": 61393.1145686,
+                            "query": "How many picture frame was on the wall?",
+                            "template": "Objects: How many X\u2019s? (quantity question)",
+                            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                        },
+                        {
+                            "response_start_time_sec": 61404.2761186,
+                            "response_end_time_sec": 61405.2714486,
+                            "query": "how many caps were on the rack?",
+                            "template": "Objects: How many X\u2019s? (quantity question)",
+                            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                        },
+                        {
+                            "response_start_time_sec": 61408.0566186,
+                            "response_end_time_sec": 61408.5354086,
+                            "query": "Where were the tennis bat? ",
+                            "template": "Objects: Where is object X?",
+                            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                        },
+                        {
+                            "response_start_time_sec": 61410.535288600004,
+                            "response_end_time_sec": 61422.3922086,
+                            "query": "In what location did I see the blue bag? ",
+                            "template": "Objects: In what location did I see object X ?",
+                            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                        }
+                    ]
+                }
+            ]
+        },
+        "people_retrieval": {
+            "query_list": [
+                {
+                    "query_metadata": {
+                        "query_range": {
+                            "start_time": "16:32",
+                            "end_time": "17:05"
+                        },
+                        "video_index": 10,
+                        "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                    },
+                    "queries": [
+                        {
+                            "response_start_time_sec": 61355.0010286,
+                            "response_end_time_sec": 61359.1010286,
+                            "query": "Who did I talk to in the living room?",
+                            "template": "People: Who did I talk to in location X?",
+                            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea"
+                        }
+                    ]
+                }
+            ]
+        },
+        "action_retrieval": {
+            "moment_localisation": {
+                "query_metadata": [
+                    {
+                        "query_range": {
+                            "start_time": "17:15",
+                            "end_time": "18:16"
+                        },
+                        "video_index": 11,
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_range": {
+                            "start_time": "18:21",
+                            "end_time": "18:26"
+                        },
+                        "video_index": 12,
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    }
+                ],
+                "query_list": [
+                    {
+                        "query_response_start_time_sec": 62568.03040526667,
+                        "query_response_end_time_sec": 62579.98769526667,
+                        "query": "trim_hedges_or_branches",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 62099.98769526667,
+                        "query_response_end_time_sec": 62106.414185266665,
+                        "query": "use_phone",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 62099.98769526667,
+                        "query_response_end_time_sec": 62104.98769526667,
+                        "query": "use_phone",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 62522.106045266664,
+                        "query_response_end_time_sec": 62522.106045266664,
+                        "query": "throw_away_trash_/_put_trash_in_trash_can",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 62100.65310526667,
+                        "query_response_end_time_sec": 62104.65269526667,
+                        "query": "use_phone",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 62127.682085266664,
+                        "query_response_end_time_sec": 62579.98769526667,
+                        "query": "cut_other_item_using_tool",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 62990.312581933336,
+                        "query_response_end_time_sec": 63029.66136193334,
+                        "query": "cut_tree_branch",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 62917.942411933334,
+                        "query_response_end_time_sec": 62920.87521193334,
+                        "query": "tie_up_branches_/_plants_with_string",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 62643.37064193333,
+                        "query_response_end_time_sec": 62852.11855193333,
+                        "query": "remove_weeds_from_ground",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 63021.88102193333,
+                        "query_response_end_time_sec": 63022.92536193333,
+                        "query": "harvest_vegetables_/_fruits_/_crops_from_plants_on_the_ground",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 62941.41416193333,
+                        "query_response_end_time_sec": 62942.10136193333,
+                        "query": "cut_other_item_using_tool",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 62801.386361933335,
+                        "query_response_end_time_sec": 62802.01036193333,
+                        "query": "throw_away_trash_/_put_trash_in_trash_can",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65597.5286086,
+                        "query_response_end_time_sec": 65610.7910286,
+                        "query": "serve_food_onto_a_plate",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65688.0592186,
+                        "query_response_end_time_sec": 65689.0430286,
+                        "query": "converse_/_interact_with_someone",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65689.0438986,
+                        "query_response_end_time_sec": 65700.5630286,
+                        "query": "use_phone",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65438.7355586,
+                        "query_response_end_time_sec": 65440.5940986,
+                        "query": "clean_/_wipe_a_table_or_kitchen_counter",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65612.8302386,
+                        "query_response_end_time_sec": 65613.4246086,
+                        "query": "serve_food_onto_a_plate",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65699.4544386,
+                        "query_response_end_time_sec": 65700.3616486,
+                        "query": "use_phone",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65721.3570286,
+                        "query_response_end_time_sec": 65727.7430286,
+                        "query": "request_and_eat_a_food_sample",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65092.987188600004,
+                        "query_response_end_time_sec": 65100.0494386,
+                        "query": "serve_food_onto_a_plate",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65106.6482886,
+                        "query_response_end_time_sec": 65112.2456986,
+                        "query": "wash_vegetable_/_fruit_/_food_item",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65115.2897686,
+                        "query_response_end_time_sec": 65117.8138986,
+                        "query": "boil_some_other_food_item",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64792.2156686,
+                        "query_response_end_time_sec": 64799.5119586,
+                        "query": "boil_rice_/_pasta_/_noodles",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64938.5530686,
+                        "query_response_end_time_sec": 64945.6833886,
+                        "query": "stir_/_mix_food_while_cooking",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64717.60277526666,
+                        "query_response_end_time_sec": 64718.67369526667,
+                        "query": "put_away_(or_take_out)_food_items_in_the_fridge",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64749.23466526667,
+                        "query_response_end_time_sec": 64757.5730286,
+                        "query": "wash_vegetable_/_fruit_/_food_item",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64909.1006886,
+                        "query_response_end_time_sec": 64911.4360286,
+                        "query": "use_the_microwave_/_warm_something_in_the_microwave",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64888.6517886,
+                        "query_response_end_time_sec": 64889.5050286,
+                        "query": "fill_a_pot_/_bottle_/_container_with_water",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64890.9452286,
+                        "query_response_end_time_sec": 64891.9680286,
+                        "query": "fill_a_pot_/_bottle_/_container_with_water",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65093.3080586,
+                        "query_response_end_time_sec": 65099.2670286,
+                        "query": "serve_food_onto_a_plate",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65109.2853186,
+                        "query_response_end_time_sec": 65111.2260286,
+                        "query": "\"cut_/_chop_/_slice_a_vegetable,_fruit,_or_meat\"",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65115.2294186,
+                        "query_response_end_time_sec": 65115.9070286,
+                        "query": "turn-on_/_light_the_stove_burner",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65119.4533586,
+                        "query_response_end_time_sec": 65122.4010286,
+                        "query": "stir_/_mix_food_while_cooking",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65123.2726186,
+                        "query_response_end_time_sec": 65123.7240286,
+                        "query": "use_other_kitchen_appliance",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65169.0844786,
+                        "query_response_end_time_sec": 65172.1670286,
+                        "query": "set_the_table",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64749.359785266664,
+                        "query_response_end_time_sec": 64750.11069526667,
+                        "query": "wash_hands",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64791.9709286,
+                        "query_response_end_time_sec": 64803.9800286,
+                        "query": "boil_rice_/_pasta_/_noodles",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65181.1953286,
+                        "query_response_end_time_sec": 65183.1450286,
+                        "query": "converse_/_interact_with_someone",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65117.1202386,
+                        "query_response_end_time_sec": 65121.9770286,
+                        "query": "boil_some_other_food_item",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64938.3258086,
+                        "query_response_end_time_sec": 64945.3860286,
+                        "query": "boil_rice_/_pasta_/_noodles",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64940.5961986,
+                        "query_response_end_time_sec": 64944.6160286,
+                        "query": "taste_food_while_cooking",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64712.96489526667,
+                        "query_response_end_time_sec": 64719.14674526667,
+                        "query": "put_away_(or_take_out)_food_items_in_the_fridge",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64726.73294526667,
+                        "query_response_end_time_sec": 64734.35997526666,
+                        "query": "put_food_into_the_oven_to_bake",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64907.7237486,
+                        "query_response_end_time_sec": 64912.1552386,
+                        "query": "remove_food_from_the_oven",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64915.4944386,
+                        "query_response_end_time_sec": 65024.3352986,
+                        "query": "serve_food_onto_a_plate",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65046.8805386,
+                        "query_response_end_time_sec": 65053.6609186,
+                        "query": "load/unload_the_dishwasher",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65055.0057386,
+                        "query_response_end_time_sec": 65105.3643386,
+                        "query": "serve_food_onto_a_plate",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65105.3643386,
+                        "query_response_end_time_sec": 65113.3933286,
+                        "query": "wash_vegetable_/_fruit_/_food_item",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 65116.0625286,
+                        "query_response_end_time_sec": 65123.8696786,
+                        "query": "stir_/_mix_food_while_cooking",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 63798.66073526667,
+                        "query_response_end_time_sec": 63823.43169526666,
+                        "query": "harvest_vegetables_/_fruits_/_crops_from_trees",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 63391.72554193333,
+                        "query_response_end_time_sec": 63406.157361933336,
+                        "query": "plant_seeds_/_plants_/_flowers_into_ground",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 63446.65144193333,
+                        "query_response_end_time_sec": 63453.255361933334,
+                        "query": "remove_weeds_from_ground",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 63359.05436193333,
+                        "query_response_end_time_sec": 63433.910241933336,
+                        "query": "plant_seeds_/_plants_/_flowers_into_ground",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 63704.788865266666,
+                        "query_response_end_time_sec": 63736.95135526667,
+                        "query": "tie_up_branches_/_plants_with_string",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 63772.15252526667,
+                        "query_response_end_time_sec": 63827.684025266666,
+                        "query": "remove_husk_from_crops",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 63798.568195266664,
+                        "query_response_end_time_sec": 63835.216475266665,
+                        "query": "cut_tree_branch",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 63718.707385266665,
+                        "query_response_end_time_sec": 63725.17096526667,
+                        "query": "tie_up_branches_/_plants_with_string",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 63359.05436193333,
+                        "query_response_end_time_sec": 63399.373361933336,
+                        "query": "plant_seeds_/_plants_/_flowers_into_ground",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64055.51469526667,
+                        "query_response_end_time_sec": 64067.159695266666,
+                        "query": "cut_other_item_using_tool",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64069.77788526667,
+                        "query_response_end_time_sec": 64071.07669526667,
+                        "query": "throw_away_trash_/_put_trash_in_trash_can",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64288.77204526667,
+                        "query_response_end_time_sec": 64298.687695266664,
+                        "query": "water_soil_/_plants_/_crops",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64297.387125266665,
+                        "query_response_end_time_sec": 64297.85169526667,
+                        "query": "wash_hands",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64362.55019526667,
+                        "query_response_end_time_sec": 64363.05869526666,
+                        "query": "turn-on_/_light_the_stove_burner",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64363.37772526667,
+                        "query_response_end_time_sec": 64366.55469526666,
+                        "query": "converse_/_interact_with_someone",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64285.20090526667,
+                        "query_response_end_time_sec": 64301.08469526667,
+                        "query": "operate_a_water_hose",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 63898.687695266664,
+                        "query_response_end_time_sec": 64071.753655266664,
+                        "query": "cut_tree_branch",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64288.45069526666,
+                        "query_response_end_time_sec": 64301.512085266666,
+                        "query": "water_soil_/_plants_/_crops",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64285.959465266664,
+                        "query_response_end_time_sec": 64288.391185266664,
+                        "query": "operate_a_water_hose",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 63898.687695266664,
+                        "query_response_end_time_sec": 64081.69965526667,
+                        "query": "remove_husk_from_crops",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64092.964715266666,
+                        "query_response_end_time_sec": 64309.52782526667,
+                        "query": "water_soil_/_plants_/_crops",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64345.98832526667,
+                        "query_response_end_time_sec": 64349.94970526667,
+                        "query": "turn-on_/_light_the_stove_burner",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 64363.564655266666,
+                        "query_response_end_time_sec": 64378.39469526667,
+                        "query": "wash_hands",
+                        "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f"
+                    },
+                    {
+                        "query_response_start_time_sec": 66407.62496,
+                        "query_response_end_time_sec": 66409.0,
+                        "query": "use_phone",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66105.79368,
+                        "query_response_end_time_sec": 66107.67616,
+                        "query": "water_soil_/_plants_/_crops",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66394.38207,
+                        "query_response_end_time_sec": 66405.99902,
+                        "query": "clean_/_wipe_a_table_or_kitchen_counter",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66347.47733,
+                        "query_response_end_time_sec": 66362.6363,
+                        "query": "walk_down_stairs_/_walk_up_stairs",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66247.25048,
+                        "query_response_end_time_sec": 66275.36786,
+                        "query": "arrange_/_organize_other_items",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66347.3921,
+                        "query_response_end_time_sec": 66361.32925,
+                        "query": "walk_down_stairs_/_walk_up_stairs",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66391.8498,
+                        "query_response_end_time_sec": 66406.28784,
+                        "query": "clean_/_wipe_other_surface_or_object",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66407.65787,
+                        "query_response_end_time_sec": 66409.0,
+                        "query": "use_phone",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66090.52441,
+                        "query_response_end_time_sec": 66095.91906,
+                        "query": "water_soil_/_plants_/_crops",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66105.01053,
+                        "query_response_end_time_sec": 66108.53091,
+                        "query": "fill_a_pot_/_bottle_/_container_with_water",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66391.9862,
+                        "query_response_end_time_sec": 66405.64717,
+                        "query": "clean_/_wipe_a_table_or_kitchen_counter",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66406.83093,
+                        "query_response_end_time_sec": 66409.0,
+                        "query": "use_phone",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66104.73869,
+                        "query_response_end_time_sec": 66107.86078,
+                        "query": "fill_a_pot_/_bottle_/_container_with_water",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66347.05063,
+                        "query_response_end_time_sec": 66359.79519,
+                        "query": "walk_down_stairs_/_walk_up_stairs",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    },
+                    {
+                        "query_response_start_time_sec": 66341.759,
+                        "query_response_end_time_sec": 66344.65295,
+                        "query": "use_a_laptop_/_computer",
+                        "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd"
+                    }
+                ]
+            }
+        },
+        "summarisation": {
+            "individual_sum": [
+                "C washes hands and holds the cupboard door in the bathroom.",
+                "C prepares a meal in the kitchen and then goes to sleep.",
+                "C rides a motorcycle on the road.",
+                "C drives a vehicle and rides a bicycle on the road.",
+                "C cycles on the road, visits a restaurant, and spends time at a house, interacting with others, eating, and drinking.",
+                "C uses a laptop in a house and an office, reads notes, and walks.",
+                "C gets ready for baseball, travels in a car, and walks to a baseball court.",
+                "C prepares for and goes on a bike ride, inspects the bike and road, and engages in gardening activities inside a greenhouse and a room.",
+                "C opens the door of the house, cycles on the road, and stops at a parking lot.",
+                "C climbs, interacts with others, and observes climbing activities in various indoor and outdoor locations related to climbing.",
+                "C relaxes on a sofa, reads a document on a tablet in the living room, talks with others, and prepares tennis equipment.",
+                "C gardens, cooks, and eats.",
+                "C uses the phone, waters flowers, walks outside, arranges documents, walks upstairs, and clears the working station.",
+                "C watches movies/presentations, eats, uses the phone, washes dishes, brushes teeth, and uses the computer at home and in the office.",
+                "C interacts with others and writes in a house and a studying room."
+            ],
+            "multi_video_sum": [
+                {
+                    "start_hour": 5,
+                    "end_hour": 12,
+                    "summary": "C's day involves a variety of activities, starting with preparing a meal and then engaging in transportation methods such as riding a motorcycle, driving a vehicle, and cycling.  C visits a restaurant, interacts with others at a house, and engages in leisure activities such as eating and drinking.  C also works on a laptop, reads notes, and walks.  The day concludes with C getting ready for and traveling to a baseball court."
+                },
+                {
+                    "start_hour": 12,
+                    "end_hour": 17,
+                    "summary": "C's day involves preparing for and going on a bike ride, inspecting the bike and road, and engaging in gardening.  C also spends time climbing, interacting with others, and observing climbing activities in various locations.  Later, C relaxes at home, reading on a tablet and preparing tennis equipment."
+                },
+                {
+                    "start_hour": 17,
+                    "end_hour": 5,
+                    "summary": "C spends their time on a variety of activities, including gardening, cooking, and eating meals.  They also use their phone, work on a computer, and engage in household chores such as washing dishes and brushing teeth.  C interacts with others, spends time outdoors walking and watering flowers, and works indoors arranging documents and writing.  They also watch movies or presentations."
+                }
+            ],
+            "holistic_sum": {
+                "summary": "C engages in a variety of activities, including preparing and eating meals, using a computer and phone, and interacting with others.  C also spends time traveling by car, motorcycle, and bicycle, and participates in sports such as baseball and climbing.  Other activities include gardening, household chores (washing dishes, brushing teeth), and relaxing at home. C also works in an office and spends time reading and writing."
+            }
+        },
+        "counting": [
+            {
+                "query_metadata": {
+                    "query_range": {
+                        "start_time": "07:30",
+                        "end_time": "07:30"
+                    },
+                    "fine_grained_query_range": [
+                        {
+                            "start_time": 0.0,
+                            "end_time": 28.021028645833333
+                        }
+                    ],
+                    "video_index": 3,
+                    "video_uid": "9061bd1f-52ee-4aee-bbff-93c186cca302"
+                },
+                "verb_noun_pairs": [
+                    {
+                        "verb": "close",
+                        "noun": "faucet_(faucet,_tap)"
+                    },
+                    {
+                        "verb": "put_(place,_leave,_drop)",
+                        "noun": "soap"
+                    },
+                    {
+                        "verb": "wipe",
+                        "noun": "soap"
+                    }
+                ],
+                "counts": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "query_metadata": {
+                    "query_range": {
+                        "start_time": "07:45",
+                        "end_time": "07:51"
+                    },
+                    "fine_grained_query_range": [
+                        {
+                            "start_time": 292.0,
+                            "end_time": 371.9540286458333
+                        },
+                        {
+                            "start_time": 0.0,
+                            "end_time": 308.0
+                        }
+                    ],
+                    "video_index": 14,
+                    "video_uid": "d37e336e-31b7-464f-bc74-f836279dcee3"
+                },
+                "verb_noun_pairs": [
+                    {
+                        "verb": "close",
+                        "noun": "oven"
+                    },
+                    {
+                        "verb": "hold_(support,_grip,_grasp)",
+                        "noun": "paintbrush"
+                    },
+                    {
+                        "verb": "put_(place,_leave,_drop)",
+                        "noun": "brush"
+                    },
+                    {
+                        "verb": "hold_(support,_grip,_grasp)",
+                        "noun": "brush"
+                    },
+                    {
+                        "verb": "insert",
+                        "noun": "paintbrush"
+                    },
+                    {
+                        "verb": "open",
+                        "noun": "stove_(burner,_gas,_stove)"
+                    },
+                    {
+                        "verb": "put_(place,_leave,_drop)",
+                        "noun": "eggplant"
+                    },
+                    {
+                        "verb": "take_(pick,_grab,_get)",
+                        "noun": "eggplant"
+                    },
+                    {
+                        "verb": "hold_(support,_grip,_grasp)",
+                        "noun": "tray"
+                    },
+                    {
+                        "verb": "put_(place,_leave,_drop)",
+                        "noun": "knife_(knife,_machete)"
+                    },
+                    {
+                        "verb": "cut_(trim,_slice,_chop)",
+                        "noun": "eggplant"
+                    },
+                    {
+                        "verb": "paint",
+                        "noun": "eggplant"
+                    },
+                    {
+                        "verb": "hold_(support,_grip,_grasp)",
+                        "noun": "eggplant"
+                    },
+                    {
+                        "verb": "hold_(support,_grip,_grasp)",
+                        "noun": "knife_(knife,_machete)"
+                    }
+                ],
+                "counts": [
+                    1,
+                    4,
+                    1,
+                    2,
+                    1,
+                    1,
+                    7,
+                    1,
+                    1,
+                    3,
+                    4,
+                    5,
+                    11,
+                    3
+                ]
+            },
+            {
+                "query_metadata": {
+                    "query_range": {
+                        "start_time": "08:05",
+                        "end_time": "08:09"
+                    },
+                    "fine_grained_query_range": [
+                        {
+                            "start_time": 0.0,
+                            "end_time": 289.133
+                        }
+                    ],
+                    "video_index": 3,
+                    "video_uid": "7bbebd35-f550-436f-92ac-02307a9fe138"
+                },
+                "verb_noun_pairs": [
+                    {
+                        "verb": "drive_(ride,_drive)",
+                        "noun": "motorcycle_(motorbike,_motorcycle)"
+                    },
+                    {
+                        "verb": "stand",
+                        "noun": "motorcycle_(motorbike,_motorcycle)"
+                    },
+                    {
+                        "verb": "put_(place,_leave,_drop)",
+                        "noun": "phone_(cellphone,_phone,_smartphone)"
+                    }
+                ],
+                "counts": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "query_metadata": {
+                    "query_range": {
+                        "start_time": "08:25",
+                        "end_time": "08:38"
+                    },
+                    "fine_grained_query_range": [
+                        {
+                            "start_time": 0.0,
+                            "end_time": 308.0
+                        }
+                    ],
+                    "video_index": 3,
+                    "video_uid": "670af94f-647f-448e-b219-1e424cc0d0f1"
+                },
+                "verb_noun_pairs": [
+                    {
+                        "verb": "take_(pick,_grab,_get)",
+                        "noun": "phone_(cellphone,_phone,_smartphone)"
+                    },
+                    {
+                        "verb": "drive_(ride,_drive)",
+                        "noun": "car_(car,_vehicle)"
+                    },
+                    {
+                        "verb": "put_(place,_leave,_drop)",
+                        "noun": "phone_(cellphone,_phone,_smartphone)"
+                    }
+                ],
+                "counts": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "query_metadata": {
+                    "query_range": {
+                        "start_time": "14:05",
+                        "end_time": "14:11"
+                    },
+                    "fine_grained_query_range": [
+                        {
+                            "start_time": 0.0,
+                            "end_time": 308.0
+                        }
+                    ],
+                    "video_index": 9,
+                    "video_uid": "c6e14005-854e-462f-a5a0-2474b759b1cc"
+                },
+                "verb_noun_pairs": [
+                    {
+                        "verb": "put_(place,_leave,_drop)",
+                        "noun": "bag_(bag,_grocery,_nylon,_polythene,_pouch,_sachet,_sack,_suitcase)"
+                    },
+                    {
+                        "verb": "tie",
+                        "noun": "string_(bobbin,_knot,_lace,_ribbon,_spool,_strand,_string,_thread,_twine,_wool,_yarn)"
+                    },
+                    {
+                        "verb": "tie",
+                        "noun": "bag_(bag,_grocery,_nylon,_polythene,_pouch,_sachet,_sack,_suitcase)"
+                    },
+                    {
+                        "verb": "open",
+                        "noun": "gate"
+                    },
+                    {
+                        "verb": "throw_(toss,_dump,_dispose)",
+                        "noun": "bag_(bag,_grocery,_nylon,_polythene,_pouch,_sachet,_sack,_suitcase)"
+                    },
+                    {
+                        "verb": "drive_(ride,_drive)",
+                        "noun": "motorcycle_(motorbike,_motorcycle)"
+                    },
+                    {
+                        "verb": "throw_(toss,_dump,_dispose)",
+                        "noun": "container_(box,_can,_carton,_case,_casing,_container,_crate,_holder,_jar,_jerrycan,_keg,_pack,_package,_packaging,_packet,_storage,_tank,_tin)"
+                    },
+                    {
+                        "verb": "carry",
+                        "noun": "bag_(bag,_grocery,_nylon,_polythene,_pouch,_sachet,_sack,_suitcase)"
+                    },
+                    {
+                        "verb": "open",
+                        "noun": "door"
+                    }
+                ],
+                "counts": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    2,
+                    1,
+                    2,
+                    2
+                ]
+            }
+        ],
+        "summary_ordering": {
+            "summaries": [
+                {
+                    "index": 0,
+                    "summary": "C climbs, interacts with others, and observes climbing activities in various indoor and outdoor locations related to climbing."
+                },
+                {
+                    "index": 1,
+                    "summary": "C interacts with others and writes in a house and a studying room."
+                },
+                {
+                    "index": 2,
+                    "summary": "C gets ready for baseball, travels in a car, and walks to a baseball court."
+                },
+                {
+                    "index": 3,
+                    "summary": "C washes hands and holds the cupboard door in the bathroom."
+                },
+                {
+                    "index": 4,
+                    "summary": "C drives a vehicle and rides a bicycle on the road."
+                },
+                {
+                    "index": 5,
+                    "summary": "C opens the door of the house, cycles on the road, and stops at a parking lot."
+                },
+                {
+                    "index": 6,
+                    "summary": "C gardens, cooks, and eats."
+                },
+                {
+                    "index": 7,
+                    "summary": "C uses a laptop in a house and an office, reads notes, and walks."
+                },
+                {
+                    "index": 8,
+                    "summary": "C rides a motorcycle on the road."
+                },
+                {
+                    "index": 9,
+                    "summary": "C relaxes on a sofa, reads a document on a tablet in the living room, talks with others, and prepares tennis equipment."
+                },
+                {
+                    "index": 10,
+                    "summary": "C watches movies/presentations, eats, uses the phone, washes dishes, brushes teeth, and uses the computer at home and in the office."
+                },
+                {
+                    "index": 11,
+                    "summary": "C uses the phone, waters flowers, walks outside, arranges documents, walks upstairs, and clears the working station."
+                },
+                {
+                    "index": 12,
+                    "summary": "C prepares a meal in the kitchen and then goes to sleep."
+                },
+                {
+                    "index": 13,
+                    "summary": "C prepares for and goes on a bike ride, inspects the bike and road, and engages in gardening activities inside a greenhouse and a room."
+                },
+                {
+                    "index": 14,
+                    "summary": "C cycles on the road, visits a restaurant, and spends time at a house, interacting with others, eating, and drinking."
+                }
+            ],
+            "ground_truth_order": [
+                3,
+                12,
+                8,
+                4,
+                14,
+                7,
+                2,
+                13,
+                5,
+                0,
+                9,
+                6,
+                11,
+                10,
+                1
+            ]
+        }
+    },
+    "simulations": [
+        {
+            "video_uid": "9061bd1f-52ee-4aee-bbff-93c186cca302",
+            "start_time": "07:30",
+            "end_time": "07:30"
+        },
+        {
+            "video_uid": "d37e336e-31b7-464f-bc74-f836279dcee3",
+            "start_time": "07:45",
+            "end_time": "07:51"
+        },
+        {
+            "video_uid": "7bbebd35-f550-436f-92ac-02307a9fe138",
+            "start_time": "08:05",
+            "end_time": "08:09"
+        },
+        {
+            "video_uid": "670af94f-647f-448e-b219-1e424cc0d0f1",
+            "start_time": "08:25",
+            "end_time": "08:38"
+        },
+        {
+            "video_uid": "c6534c1f-765e-42e7-86f4-da210d5211c3",
+            "start_time": "08:43",
+            "end_time": "09:12"
+        },
+        {
+            "video_uid": "23eeced2-6067-4379-9ebd-9e263d8171ef",
+            "start_time": "11:35",
+            "end_time": "11:50"
+        },
+        {
+            "video_uid": "046855d7-41d7-4f41-a6a7-fce921ea8133",
+            "start_time": "11:55",
+            "end_time": "12:02"
+        },
+        {
+            "video_uid": "41309ada-0a81-47b2-bdd1-453a178db18a",
+            "start_time": "13:00",
+            "end_time": "13:20"
+        },
+        {
+            "video_uid": "c6e14005-854e-462f-a5a0-2474b759b1cc",
+            "start_time": "14:05",
+            "end_time": "14:11"
+        },
+        {
+            "video_uid": "6e68d2f9-6d37-4317-a3eb-9541321d558e",
+            "start_time": "14:35",
+            "end_time": "16:27"
+        },
+        {
+            "video_uid": "cbb644c5-aa49-479d-97ce-cfe515bf01ea",
+            "start_time": "16:32",
+            "end_time": "17:05"
+        },
+        {
+            "video_uid": "2970b84a-d6cf-4593-a487-53f853f0418f",
+            "start_time": "17:15",
+            "end_time": "18:16"
+        },
+        {
+            "video_uid": "dd08bc58-b614-4ba7-b883-a213560621dd",
+            "start_time": "18:21",
+            "end_time": "18:26"
+        },
+        {
+            "video_uid": "9a732221-3adb-4903-b61d-9b8097965fbf",
+            "start_time": "18:50",
+            "end_time": "19:56"
+        },
+        {
+            "video_uid": "bcac27c1-246b-4e30-9231-33281f02b2fa",
+            "start_time": "20:01",
+            "end_time": "20:08"
+        }
+    ]
+}

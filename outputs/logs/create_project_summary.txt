@@ -1,0 +1,55 @@
+# orinKeyframe_01 create project summary
+
+## Created files
+README.md
+config/default.yaml
+config/xlebench.yaml
+datasets/X-Lebench数据集（部分）/README.md
+datasets/X-Lebench数据集（部分）/simulation_0120dffb_0d0b4c6b_annotation.json
+datasets/video_order_user.png_list.txt
+datasets/xlebench_ordered_videos/missing_video_ids.txt
+datasets/xlebench_ordered_videos/ordered_manifest.tsv
+docs/algorithm_design.md
+docs/orin_environment.md
+docs/windows_verification.md
+docs/xlebench_dataset.md
+outputs/json/benchmark_summary.json
+outputs/logs/create_project_summary.txt
+outputs/reports/benchmark_report.html
+requirements.txt
+run_benchmark.py
+run_extract.py
+scripts/check_env.py
+scripts/download_xlebench_ego4d.py
+scripts/monitor_tegrastats.sh
+scripts/prepare_xlebench_order.py
+scripts/run_orin_benchmark.sh
+scripts/run_orin_check.sh
+scripts/run_windows_verify.bat
+src/__init__.py
+src/export_utils.py
+src/feature_utils.py
+src/html_report.py
+src/keyframe_extractor.py
+src/metrics_monitor.py
+src/tegrastats_parser.py
+src/video_loader.py
+src/yolo_optional.py
+videos/README.md
+
+## Current Windows verification result
+No mp4 videos found; benchmark generated placeholder outputs.
+Python: 3.10.20
+Rows: 0
+
+## Orin run commands
+python3 scripts/check_env.py
+python3 run_benchmark.py --video_dir videos
+bash scripts/monitor_tegrastats.sh
+
+## Manual video input
+Put .mp4 files into orinKeyframe_01/videos, or use the integrated X-Lebench path:
+python3 run_benchmark.py --video_dir "datasets/X-Lebench数据集（部分）/Ego4D/v2/full_scale" --config config/xlebench.yaml
+
+## Manual YOLO weights input
+Optional: put weights/yolo26n.pt under this project. If missing, the code falls back to non-YOLO extraction.

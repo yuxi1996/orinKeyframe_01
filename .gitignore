@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Local outputs and benchmark artifacts
+outputs/keyframes/
+outputs/logs/tegrastats.log
+outputs/logs/benchmark.csv
+
+# Large downloaded videos and temporary Ego4D downloads
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.m4v
+*.mp4.*
+
+# Optional model weights
+weights/
+*.pt
+*.onnx
+*.engine
+
+# Secrets / local credentials
+credentials
+config
+*.pem
+*.key
+.env
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
