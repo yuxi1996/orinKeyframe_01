@@ -95,7 +95,10 @@ def write_create_project_summary(path: Path, rows: list[dict], videos_found: int
     files = sorted(
         str(p).replace("\\", "/")
         for p in Path(".").rglob("*")
-        if p.is_file() and "__pycache__" not in p.parts and p.suffix != ".pyc"
+        if p.is_file()
+        and ".git" not in p.parts
+        and "__pycache__" not in p.parts
+        and p.suffix != ".pyc"
     )
     status = "OK" if videos_found else "No mp4 videos found; benchmark generated placeholder outputs."
     text = "\n".join([
@@ -110,9 +113,11 @@ def write_create_project_summary(path: Path, rows: list[dict], videos_found: int
         f"Rows: {len(rows)}",
         "",
         "## Orin run commands",
-        "python3 scripts/check_env.py",
-        "python3 run_benchmark.py --video_dir videos",
-        "bash scripts/monitor_tegrastats.sh",
+        "curl -L https://raw.githubusercontent.com/yuxi1996/orinKeyframe_01/main/bootstrap_orin_from_github.sh -o bootstrap_orin_from_github.sh",
+        "bash bootstrap_orin_from_github.sh",
+        "",
+        "If already inside the repo:",
+        "bash scripts/orin_auto_setup_download_test.sh",
         "",
         "## Manual video input",
         "Put .mp4 files into orinKeyframe_01/videos, or use the integrated X-Lebench path:",

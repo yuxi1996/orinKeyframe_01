@@ -27,6 +27,14 @@ Install Ego4D CLI on Orin:
 python3 -m pip install ego4d
 ```
 
+Or use the full auto script:
+
+```bash
+curl -L https://raw.githubusercontent.com/yuxi1996/orinKeyframe_01/main/bootstrap_orin_from_github.sh \
+  -o bootstrap_orin_from_github.sh
+bash bootstrap_orin_from_github.sh
+```
+
 Run a dry run first:
 
 ```bash

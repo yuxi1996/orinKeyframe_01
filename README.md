@@ -56,13 +56,35 @@ Please put .mp4 files into orinKeyframe_01/videos and rerun benchmark.
 
 ## Orin Deployment
 
-Copy the whole `orinKeyframe_01` folder to Orin, then run:
+One-command GitHub bootstrap on Orin:
+
+```bash
+curl -L https://raw.githubusercontent.com/yuxi1996/orinKeyframe_01/main/bootstrap_orin_from_github.sh \
+  -o bootstrap_orin_from_github.sh
+bash bootstrap_orin_from_github.sh
+```
+
+The bootstrap script clones or updates this repository, creates a Python virtualenv with system site packages, installs runtime dependencies plus the Ego4D CLI, downloads X-Lebench related Ego4D videos, prepares the user-order manifest, and runs the benchmark.
+
+If Ego4D needs explicit AWS credential files, pass them as local paths on Orin:
+
+```bash
+bash bootstrap_orin_from_github.sh -- \
+  --aws-config /path/to/aws/config \
+  --aws-credentials /path/to/aws/credentials
+```
+
+Dry run the download first:
+
+```bash
+bash bootstrap_orin_from_github.sh -- --dry-run-download --skip-benchmark
+```
+
+If the repo is already copied to Orin, run:
 
 ```bash
 cd orinKeyframe_01
-python3 -m pip install -r requirements.txt
-python3 scripts/check_env.py
-python3 run_benchmark.py --video_dir videos
+bash scripts/orin_auto_setup_download_test.sh
 ```
 
 Optional tegrastats monitor:

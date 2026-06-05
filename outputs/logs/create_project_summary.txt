@@ -1,7 +1,9 @@
 # orinKeyframe_01 create project summary
 
 ## Created files
+.gitignore
 README.md
+bootstrap_orin_from_github.sh
 config/default.yaml
 config/xlebench.yaml
 datasets/X-Lebench数据集（部分）/README.md
@@ -22,6 +24,7 @@ run_extract.py
 scripts/check_env.py
 scripts/download_xlebench_ego4d.py
 scripts/monitor_tegrastats.sh
+scripts/orin_auto_setup_download_test.sh
 scripts/prepare_xlebench_order.py
 scripts/run_orin_benchmark.sh
 scripts/run_orin_check.sh
@@ -43,9 +46,11 @@ Python: 3.10.20
 Rows: 0
 
 ## Orin run commands
-python3 scripts/check_env.py
-python3 run_benchmark.py --video_dir videos
-bash scripts/monitor_tegrastats.sh
+curl -L https://raw.githubusercontent.com/yuxi1996/orinKeyframe_01/main/bootstrap_orin_from_github.sh -o bootstrap_orin_from_github.sh
+bash bootstrap_orin_from_github.sh
+
+If already inside the repo:
+bash scripts/orin_auto_setup_download_test.sh
 
 ## Manual video input
 Put .mp4 files into orinKeyframe_01/videos, or use the integrated X-Lebench path:
